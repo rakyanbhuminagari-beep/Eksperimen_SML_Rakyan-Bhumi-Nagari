@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 
-df = pd.read_csv('WA_Fn-UseC_-Telco-Customer-Churn.csv')
+df = pd.read_csv('telcochurn_raw/WA_Fn-UseC_-Telco-Customer-Churn.csv')
 
 df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce')
 
